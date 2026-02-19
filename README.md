@@ -57,9 +57,9 @@ src/
 
 | Round | Format | Duration |
 |---|---|---|
-| **Round 1** — Quiz Knockout | Interactive real-time quiz | 30 min |
-| **Round 2** — Code Golf | Write the most concise solution | 30 min |
-| **Round 3** — Debug & Sabotage | Debug code + inject bugs in opponents' code | 90 min |
+| **Round 1** — Quiz Knockout | Interactive real-time quiz | 60 min |
+| **Round 2** — Code Golf | Write the most concise solution | 90 min |
+| **Round 3** — Debug & Sabotage | Debug code + inject bugs in opponents' code | 120 min |
 
 ## 💰 Prize Pool
 
