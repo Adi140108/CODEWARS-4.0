@@ -80,7 +80,7 @@ const Navbar = () => {
               </a>
             );
           })}
-          <a href="https://example.com" target="_blank" rel="noopener noreferrer" className="cta-btn" onClick={() => setIsOpen(false)}>Register</a>
+          <a href="https://unstop.com/o/NvsSya6?lb=GQL1z9WG" target="_blank" rel="noopener noreferrer" className="cta-btn" onClick={() => setIsOpen(false)}>Register</a>
         </div>
 
         <div className="hamburger" onClick={toggleMenu}>

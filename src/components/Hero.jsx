@@ -64,7 +64,7 @@ const Hero = () => {
         </div>
 
         <div className="hero-actions fade-in-up">
-          <a href="https://example.com" target="_blank" rel="noopener noreferrer" className="btn-primary">Register Now</a>
+          <a href="https://unstop.com/o/NvsSya6?lb=GQL1z9WG" target="_blank" rel="noopener noreferrer" className="btn-primary">Register Now</a>
           <a href="#rounds" className="btn-secondary">Explore Rounds</a>
         </div>
       </div>
