@@ -30,6 +30,7 @@ const Footer = () => {
               <li><a href="#about">About</a></li>
               <li><a href="#roadmap">Timeline</a></li>
               <li><a href="#rounds">Rounds</a></li>
+              <li><a href="#sponsors">Sponsors</a></li>
               <li><a href="#rules">Rules</a></li>
               <li><a href="#team">Team</a></li>
               <li><a href="#faq">FAQ</a></li>

@@ -84,8 +84,10 @@ const Team = () => {
         }
 
         .team-card {
-          background: rgba(255, 255, 255, 0.03);
-          border: 1px solid rgba(255, 255, 255, 0.08);
+          background: rgba(255, 255, 255, 0.05);
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
+          border: 1px solid rgba(255, 255, 255, 0.1);
           border-radius: 15px;
           padding: 2.5rem 2rem;
           text-align: center;
@@ -107,7 +109,7 @@ const Team = () => {
           transform: translateY(-8px);
           border-color: var(--primary-color);
           box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
-          background: rgba(255, 255, 255, 0.05);
+          background: rgba(255, 255, 255, 0.1);
         }
 
         .team-avatar {

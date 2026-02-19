@@ -47,7 +47,7 @@ const About = () => {
     {
       id: 2,
       title: "Cash Prizes",
-      desc: "Compete for a prize pool worth ₹7,000, along with exclusive vouchers, certificates, and recognition.",
+      desc: "Compete for a prize pool worth ₹7,000, along with certificates, and recognition.",
       color: "#bc13fe"
     },
     {

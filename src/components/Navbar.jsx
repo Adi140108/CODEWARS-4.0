@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   const handleScroll = useCallback(() => {
-    const sectionIds = ['home', 'about', 'roadmap', 'rounds', 'rules', 'team', 'faq'];
+    const sectionIds = ['home', 'about', 'roadmap', 'rounds', 'sponsors', 'rules', 'team', 'faq'];
     let currentActive = 'home';
 
     for (let i = 0; i < sectionIds.length; i++) {
@@ -37,6 +37,7 @@ const Navbar = () => {
     { href: '#about', label: 'About', id: 'about' },
     { href: '#roadmap', label: 'Timeline', id: 'roadmap' },
     { href: '#rounds', label: 'Rounds', id: 'rounds' },
+    { href: '#sponsors', label: 'Sponsors', id: 'sponsors' },
     { href: '#rules', label: 'Rules', id: 'rules' },
     { href: '#team', label: 'Team', id: 'team' },
     { href: '#faq', label: 'FAQ', id: 'faq' },

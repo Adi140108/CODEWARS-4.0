@@ -5,7 +5,7 @@ const Hero = () => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    const targetDate = new Date('February 27, 2026 11:00:00').getTime();
+    const targetDate = new Date('February 28, 2026 11:00:00').getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
@@ -39,7 +39,7 @@ const Hero = () => {
 
         <div className="countdown-wrapper fade-in-up">
           <p className="countdown-label">Event Countdown</p>
-          <p className="event-date">FEBRUARY 27, 2026</p>
+          <p className="event-date">FEBRUARY 28, 2026</p>
           <div className="countdown-container">
             <div className="countdown-item">
               <span className="count">{timeLeft.days}</span>

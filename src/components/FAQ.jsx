@@ -77,7 +77,9 @@ const FAQ = () => {
         }
 
         .faq-item {
-          background: rgba(255, 255, 255, 0.03);
+          background: rgba(255, 255, 255, 0.05);
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
           border: 1px solid rgba(255, 255, 255, 0.1);
           border-radius: 10px;
           overflow: hidden;
@@ -86,13 +88,13 @@ const FAQ = () => {
         }
 
         .faq-item:hover {
-          background: rgba(255, 255, 255, 0.05);
+          background: rgba(255, 255, 255, 0.08);
           border-color: var(--primary-color);
         }
 
         .faq-item.active {
           border-color: var(--primary-color);
-          background: rgba(0, 243, 255, 0.02);
+          background: rgba(0, 243, 255, 0.05);
         }
 
         .faq-question {

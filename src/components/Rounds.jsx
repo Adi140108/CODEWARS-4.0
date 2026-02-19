@@ -399,8 +399,10 @@ const Rounds = () => {
 
         /* Info Pills with staggered reveal */
         .info-pill {
-          background: rgba(0, 0, 0, 0.4);
-          border: 1px solid rgba(255, 255, 255, 0.05);
+          background: rgba(255, 255, 255, 0.05);
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
+          border: 1px solid rgba(255, 255, 255, 0.1);
           border-radius: 10px;
           padding: 1rem 1.5rem;
           display: flex;
@@ -418,8 +420,8 @@ const Rounds = () => {
         }
 
         .info-pill:hover {
-          background: rgba(0, 0, 0, 0.7);
-          border-color: rgba(255, 255, 255, 0.15);
+          background: rgba(255, 255, 255, 0.1);
+          border-color: rgba(255, 255, 255, 0.2);
           transform: translateY(-3px) translateX(5px);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         }

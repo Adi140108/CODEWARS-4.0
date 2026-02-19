@@ -5,6 +5,7 @@ import About from './components/About';
 import Roadmap from './components/Roadmap';
 import Prizes from './components/Prizes';
 import Rounds from './components/Rounds';
+import Sponsors from './components/Sponsors';
 import Rules from './components/Rules';
 import Team from './components/Team';
 import FAQ from './components/FAQ';
@@ -24,6 +25,7 @@ function App() {
       <Roadmap />
       <Prizes />
       <Rounds />
+      <Sponsors />
       <Rules />
       <Team />
       <FAQ />
