@@ -12,12 +12,16 @@ import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import InteractiveBackground from './components/InteractiveBackground';
+import Preloader from './components/Preloader';
 import './styles/index.css';
 import './styles/animations.css';
 
 function App() {
+  const [isLoading, setIsLoading] = React.useState(true);
+
   return (
     <div className="App">
+      {isLoading && <Preloader onComplete={() => setIsLoading(false)} />}
       <InteractiveBackground />
       <Navbar />
       <Hero />
