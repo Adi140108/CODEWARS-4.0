@@ -32,7 +32,7 @@ const Hero = () => {
       <div className="hero-content">
         <div className="hero-logo-container animate-float">
           <p className="anaadyanta-label">Part of</p>
-          <img src="/assets/anaadyanta_final.png" alt="Anaadyanta '26" className="anaadyanta-logo" />
+          <img src="/assets/image.png" alt="Anaadyanta '26" className="anaadyanta-logo" />
         </div>
         <h1 className="hero-title typing-effect">CODE WARS <span className="highlight">4.0</span></h1>
         <p className="hero-subtitle">The Ultimate Coding Battleground</p>
