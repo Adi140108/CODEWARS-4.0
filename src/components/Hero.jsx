@@ -64,7 +64,7 @@ const Hero = () => {
         </div>
 
         <div className="hero-actions fade-in-up">
-          <a href="https://unstop.com/o/NvsSya6?lb=GQL1z9WG" target="_blank" rel="noopener noreferrer" className="btn-primary">Register Now</a>
+          <a href="https://www.anaadyanta.in/events/gm_cw" target="_blank" rel="noopener noreferrer" className="btn-primary">Register Now</a>
           <a href="#rounds" className="btn-secondary">Explore Rounds</a>
         </div>
       </div>
@@ -235,14 +235,19 @@ const Hero = () => {
         .btn-primary {
           background: var(--primary-color);
           color: #000;
-          box-shadow: 0 0 15px rgba(0, 243, 255, 0.4);
-          border: none;
+          box-shadow: 0 0 20px rgba(0, 243, 255, 0.4);
+          border: 3px solid #fff;
+          position: relative;
+          overflow: hidden;
+          transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
         .btn-primary:hover {
           background: #fff;
-          box-shadow: 0 0 25px rgba(0, 243, 255, 0.8);
-          transform: translateY(-3px);
+          color: #000;
+          box-shadow: 0 0 40px rgba(0, 243, 255, 0.9);
+          transform: translateY(-5px) scale(1.05);
+          border-color: var(--primary-color);
         }
 
         .btn-secondary {
@@ -284,18 +289,12 @@ const Hero = () => {
           .hero-logo {
             max-width: 200px;
           }
-          .hero-actions {
-            flex-direction: column;
-          }
-          .countdown-container {
-             gap: 1rem;
-          }
-          .countdown-item {
-             min-width: 60px;
-             padding: 0.5rem;
-          }
-          .count {
-             font-size: 1.8rem;
+          .btn-primary {
+            width: 80%;
+            max-width: 300px;
+            padding: 1.2rem;
+            font-size: 1.1rem;
+            border-width: 3px;
           }
         }
       `}</style>

@@ -80,7 +80,7 @@ const Navbar = () => {
               </a>
             );
           })}
-          <a href="https://unstop.com/o/NvsSya6?lb=GQL1z9WG" target="_blank" rel="noopener noreferrer" className="cta-btn" onClick={() => setIsOpen(false)}>Register</a>
+          <a href="https://www.anaadyanta.in/events/gm_cw" target="_blank" rel="noopener noreferrer" className="cta-btn" onClick={() => setIsOpen(false)}>Register</a>
         </div>
 
         <div className="hamburger" onClick={toggleMenu}>
@@ -149,25 +149,53 @@ const Navbar = () => {
         }
 
         .cta-btn {
-          padding: 0.5rem 1.5rem;
-          border: 1px solid var(--primary-color);
-          border-radius: 5px;
+          padding: 0.6rem 2rem;
+          border: 2px solid var(--primary-color);
+          border-radius: 8px;
           color: var(--primary-color) !important;
-          transition: all 0.3s ease;
-          background: transparent;
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          background: rgba(0, 243, 255, 0.08);
+          backdrop-filter: blur(5px);
           cursor: pointer;
           font-family: inherit;
           font-size: 1rem;
-          font-weight: 500;
+          font-weight: 700;
           text-decoration: none;
           display: inline-block;
           margin-left: 2rem;
+          box-shadow: 0 0 15px rgba(0, 243, 255, 0.2);
+          position: relative;
+          overflow: hidden;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+
+        .cta-btn::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.2),
+            transparent
+          );
+          transition: left 0.5s;
+        }
+
+        .cta-btn:hover::before {
+          left: 100%;
         }
 
         .cta-btn:hover {
           background-color: var(--primary-color);
           color: #000 !important;
-          box-shadow: 0 0 15px var(--primary-color);
+          box-shadow: 0 0 25px var(--primary-color);
+          transform: translateY(-2px);
+          border-color: #fff;
         }
         
         .cta-btn::after {
@@ -208,6 +236,20 @@ const Navbar = () => {
 
           .nav-links.active {
             clip-path: circle(150% at 100% 0);
+          }
+          
+          .nav-links a {
+            padding: 0.5rem 0;
+            font-size: 1.1rem;
+          }
+
+          .cta-btn {
+            margin-left: 0;
+            margin-top: 1.5rem;
+            width: 80%;
+            text-align: center;
+            border-width: 2px;
+            background: rgba(0, 243, 255, 0.1);
           }
           
           .bar.open:nth-child(1) {

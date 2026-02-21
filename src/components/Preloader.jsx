@@ -18,7 +18,7 @@ const Preloader = ({ onComplete }) => {
     // Call onComplete to unmount the preloader
     const completeTimeout = setTimeout(() => {
       if (onComplete) onComplete();
-    }, 2800);
+    }, 3200); // Increased to allow 2.5s transition + 0.5s start delay to finish
 
     return () => {
       clearTimeout(zoomTimeout);
@@ -60,16 +60,16 @@ const Preloader = ({ onComplete }) => {
 
         .logo-container {
           position: relative;
-          width: 280px;
-          height: 280px;
+          width: 320px;
+          height: 320px;
           display: flex;
           justify-content: center;
           align-items: center;
-          transition: transform 2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1.5s ease;
+          transition: transform 2.5s cubic-bezier(0.7, 0, 0.4, 1), opacity 2s ease;
           transform: scale(0.6);
           opacity: 0;
           animation: logoEntrance 0.8s forwards ease-out;
-          transform-origin: center 45%; /* Center slightly higher to hit the middle of the 'O' */
+          transform-origin: center 54%; /* Adjusted to hit the exact center of the inner 'O' */
         }
 
         @keyframes logoEntrance {
@@ -84,8 +84,8 @@ const Preloader = ({ onComplete }) => {
         }
 
         .logo-container.zoom {
-          transform: scale(25); /* Increased scale to fully "pass through" the hole */
-          opacity: 0;
+          transform: scale(500); /* Extreme scale to truly pass through the 'O' */
+          opacity: 0; /* Fade out as it zooms through for a seamless transition */
         }
 
         .preloader-logo {
@@ -103,7 +103,7 @@ const Preloader = ({ onComplete }) => {
           transform: translate(-50%, -50%);
           width: 150%;
           height: 150%;
-          background: radial-gradient(circle, rgba(0, 243, 255, 0.2) 0%, transparent 70%);
+          background: radial-gradient(circle, rgba(0, 243, 255, 0.25) 0%, transparent 70%);
           z-index: 1;
           border-radius: 50%;
           animation: pulseGlow 2s infinite alternate;
@@ -111,7 +111,7 @@ const Preloader = ({ onComplete }) => {
 
         @keyframes pulseGlow {
           from { transform: translate(-50%, -50%) scale(0.8); opacity: 0.3; }
-          to { transform: translate(-50%, -50%) scale(1.1); opacity: 0.6; }
+          to { transform: translate(-50%, -50%) scale(1.1); opacity: 0.7; }
         }
       `}</style>
     </div>
