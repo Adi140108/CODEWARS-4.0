@@ -19,9 +19,9 @@ const Roadmap = () => {
     }, []);
 
     const events = [
-        { time: "Feb 19", title: "Registrations Open", desc: "Online registration begins! Form your team and secure your spot.", icon: "🚀" },
-        { time: "Feb 25, 2:00 AM", title: "Registrations Close", desc: "Last day to register online. On-spot registration also available.", icon: "🔒" },
-        { time: "Feb 28,09:00 AM", title: "Registration Desk Opens", desc: "Check-in at the venue, collect your badges and get ready!", icon: "📋" },
+        { time: "Feb 19", title: "Online Registrations Open", desc: "Online registration begins! Form your team and secure your spot.", icon: "🚀" },
+        { time: "Feb 25, 2:00 AM", title: "Online Registrations Close", desc: "Last day to register online. On-spot registration also available.", icon: "🔒" },
+        { time: "Feb 28,09:00 AM", title: "Offline Registration Desk Opens", desc: "Check-in at the venue, collect your badges and get ready!", icon: "📋" },
         { time: "11:00 AM", title: "Inauguration", desc: "Welcome address, rules briefing & team formation", icon: "🎤" },
         { time: "60 MIN", title: "Round 1: Trivia Triumph", desc: "Fast-paced Menti Quiz — speed & accuracy matter!", icon: "⚡" },
         { time: "90 MIN", title: "Round 2: Byte-sized Battle", desc: "Code Golf challenge — shortest code wins!", icon: "⛳" },

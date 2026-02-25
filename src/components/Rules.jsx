@@ -26,14 +26,14 @@ const Rules = () => {
 
   const generalRules = [
     { icon: "👥", title: "Team Size", desc: "Max 2 members per team. Solo participation is also allowed." },
-    { icon: "📊", title: "Qualification", desc: "Top 50% from Round 1 qualify for the next round." },
-    { icon: "⚔️", title: "Elimination", desc: "Round 2 is a 1v1 knockout format." },
+    { icon: "📊", title: "Scoring", desc: "Scores from all rounds accumulate to determine the final winners." },
+    { icon: "⚔️", title: "Matchups", desc: "Round 2 features 1v1 matchups where teams compete for points." },
     { icon: "🏁", title: "Victory", desc: "Round 3 winner determined by debugging speed & accuracy." }
   ];
 
   const violations = [
     { title: "Plagiarism", desc: "Unauthorized collaboration or external help will result in disqualification." },
-    { title: "Team Disruption", desc: "Disrupting another team (outside of Round 3 bug injection) will lead to immediate elimination." },
+    { title: "Team Disruption", desc: "Disrupting another team (outside of Round 3 bug injection) will lead to immediate disqualification." },
     { title: "Unfair Debugging", desc: "Deleting code instead of fixing it will result in penalty points or disqualification." }
   ];
 

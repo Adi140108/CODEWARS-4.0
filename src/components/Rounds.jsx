@@ -19,7 +19,7 @@ const Rounds = () => {
       id: 2,
       title: "Byte-sized Battle",
       subtitle: "Code Golf",
-      description: "Write correct solutions using the fewest characters possible. 1v1 matchups where concise code wins.",
+      description: "Write correct solutions using the fewest characters possible. 1v1 matchups where concise code earns maximum points.",
       icon: "⛳",
       color: "#ff9f43"
     },
@@ -48,7 +48,7 @@ const Rounds = () => {
       details: [
         { label: "Duration", value: "30 min" },
         { label: "Format", value: "One-on-one team matchups based on chosen language" },
-        { label: "Objective", value: "Fewest characters of correct code wins" },
+        { label: "Objective", value: "Fewest characters of correct code earns the most points" },
         { label: "Tiebreakers", value: "Submission time, execution efficiency" }
       ]
     },
